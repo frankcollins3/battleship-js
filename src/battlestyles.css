@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
+body {
+  background-color: rgb(56, 45, 45);
+  font-family: 'Inconsolata';
+  /*background: url(./fade_4.png);*/
+}
+
+h1 {
+  padding: 10px;
+}
+
+h2 {
+  color: #24fcff;
+}
+
+p {
+  color: red;
+}
+
+td, input[type="radio"]{
+	cursor: pointer;
+}
+
+#currentDimension{
+	display: none;
+}
+
+#currentRoundWrapper{
+	display: none;
+}
+
+#gameInfo {
+	background-color: #3a3a3a;
+	width: 100%;
+	border-width: 2px;
+	border-style: solid;
+	padding: 10px;
+}
+
+#gameShips {
+    background-color: gray;
+	width: 100%;
+	border-width: 2px;
+	border-style: solid;
+	display: inline-flex;
+    border-top-width: 0px;
+    align-items: center;
+    padding: 10px;
+    display: none;
+}
+
+#gameShipsDestroyedP0{
+    background-color: gray;
+	width: 100%;
+	border-width: 2px;
+	border-style: solid;
+	display: inline-flex;
+    border-top-width: 0px;
+    align-items: center;
+    padding: 10px;
+}
+
+#gameShipsDestroyedP1{
+    background-color: gray;
+	width: 100%;
+	border-width: 2px;
+	border-style: solid;
+	display: inline-flex;
+    border-top-width: 0px;
+    align-items: center;
+    padding: 10px;
+}
+
+
+#gameShipDirection {
+    background-color: gray;
+	width: 100%;
+	border-width: 2px;
+	border-style: solid;
+	display: inline-flex;
+    border-top-width: 0px;
+    align-items: center;
+    padding: 10px;
+    display: none;
+}
+
+#boardSizeSelectionDiv{
+	background-color: gray;
+	width: 100%;
+	height: 30px;
+	border-width: 2px;
+	border-style: solid;
+	display: inline-flex;
+    border-top-width: 0px;
+    align-items: center;
+    padding: 10px;
+}
+
+#gameOver{
+    background-color: gray;
+	width: 100%;
+	border-width: 2px;
+	border-style: solid;
+	display: inline-flex;
+    border-top-width: 0px;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.sizeSelectionButton{
+	border-radius: 4px;
+	font-size: 20px;
+	padding: 9px 18px;
+	background-color: #3a3a3a;
+	color: #24fcff;
+	cursor:pointer;
+}
+
+.sizeSelectionButton:hover {
+  background-color: #a2a2a2;
+}
+
+.radiobuttons-container {
+	/*height:100vh;
+	display: inline-flex;*/
+	display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-container {
+  display: flex;
+}
+
+#next{
+	border-radius: 4px;
+	font-size: 14px;
+	padding: 6px 18px;
+	background-color: #3a3a3a;
+	color: #24fcff;
+	cursor:pointer;
+}
+
+#next:hover {
+  background-color: #a2a2a2; /* Green */
+}
+
+#gameNext{
+	background-color: lightgray;
+	width: 100%;
+	height: 30px;
+	border-width: 2px;
+	border-style: solid;
+	display: inline-flex;
+    border-top-width: 0px;
+    align-items: center;
+    padding: 10px;
+}
+
+.shipDiv {
+	width: 90px;
+	padding-left: 50px;
+}
+
+.shipDestroyedDiv {
+	display: inline-flex;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.shipToSelect {
+	background-color: #565656;
+}
+
+.gameBoardBasic {
+	/*background-color: purple;*/
+}
+
+#containerP0 {
+	background-color: purple;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 100%;
+	align-items: center;
+	border-width: 2px;
+	border-top-width: 0px;
+	border-style: solid;
+}
+
+#containerP1 {
+	background-color: blue;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 100%;
+	align-items: center;
+	border-width: 2px;
+	border-top-width: 0px;
+	border-style: solid;
+}
+
+.buttonBasic {
+	background-color: lightGray;
+	border-color: #f43683;
+	border-radius: 4px;
+	font-size: 20px;
+	padding: 9px 18px;
+	background-color: #939393;
+	color: #24fcff;
+	cursor:pointer;
+}
+
+.buttonBasic:hover {
+	background-color: #3a3a3a;
+	border-color: #f43683;
+}
+
+.buttonSelected {
+	border-color: #f43683;
+	border-radius: 4px;
+	font-size: 20px;
+	padding: 9px 18px;
+	background-color: #3a3a3a;
+	color: #24fcff;
+	cursor:pointer;
+}
+
+.buttonShoot {
+	background-color: lightGray;
+	border-color: #f43683;
+	cursor:pointer;
+}
+
+.buttonShoot:hover {
+	background-color: lightGray;
+	border-color: #f43683;
+}
+
+.buttonHit {
+	background-color: green;
+	border-color: #f43683;
+	border-radius: 4px;
+	font-size: 20px;
+	padding: 9px 18px;
+	color: #24fcff;
+}
+
+.buttonMiss {
+	background-color: red;
+	border-color: #f43683;
+	border-radius: 4px;
+	font-size: 20px;
+	padding: 9px 18px;
+	color: #24fcff;
+}
+
+.buttonDestroyed {
+	background-color: #006400;
+	border-color: #f43683;
+	border-radius: 4px;
+	font-size: 20px;
+	padding: 9px 18px;
+	color: #24fcff;
+}
