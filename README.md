@@ -4,7 +4,7 @@ Tiny project in pure js. A two player battleship game, played on the same screen
 
 #### Deployment
 
-Simply click on [index.html](./index.html) and enjoy the game.
+Simply download the project, click on [index.html](./index.html) and enjoy the game.
 
 #### License
 
